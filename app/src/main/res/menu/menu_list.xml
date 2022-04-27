@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/goto_fragment1"
+        android:title="Inicio"
+        android:icon="@drawable/soccer_std">
+    </item>
+
+    <item android:id="@+id/goto_fragment2"
+    android:title="Campeones"
+    android:icon="@drawable/champion_cup">
+</item>
+
+    <item android:id="@+id/goto_fragment3"
+    android:title="Jugadores"
+    android:icon="@drawable/messi">
+</item>
+
+    <item android:id="@+id/goto_fragment4"
+        android:title="Equipos"
+        android:icon="@drawable/football_club">
+    </item>
+</menu>

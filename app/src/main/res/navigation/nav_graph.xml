@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/goto_fragment1">
+
+    <fragment
+        android:id="@+id/goto_fragment1"
+        android:name="com.example.lab5_pg.views.fragment_home"
+        android:label="fragment_fragment_home"
+        tools:layout="@layout/fragment_fragment_home" >
+        <action
+            android:id="@+id/action_fragment_home_to_fragment_champions"
+            app:destination="@+id/goto_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/goto_fragment2"
+        android:name="com.example.lab5_pg.views.fragment_champions"
+        android:label="fragment_fragmento_champions"
+        tools:layout="@layout/fragment_fragmento_champions" >
+        <action
+            android:id="@+id/action_fragment_champions_to_fragment_players"
+            app:destination="@+id/goto_fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/goto_fragment3"
+        android:name="com.example.lab5_pg.views.fragment_players"
+        android:label="fragment_fragmento_players"
+        tools:layout="@layout/fragment_fragmento_players" >
+        <action
+            android:id="@+id/action_fragment_players_to_fragment_teams"
+            app:destination="@+id/goto_fragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/goto_fragment4"
+        android:name="com.example.lab5_pg.views.fragment_teams"
+        android:label="fragment_teams"
+        tools:layout="@layout/fragment_teams" />
+</navigation>
