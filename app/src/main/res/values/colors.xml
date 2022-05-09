@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparence">#77082049</color>
+
+    <!-- Colores de Material DESIGN by myOwn-->
+    <color name="mdesign_blue_900">#082049</color>
+    <color name="mdesing_purple_A200">#D200B4</color>
+    <color name="mdesign_deep_purple_900">#311B92</color>
+    <color name="mdesing_blue_800">#1565C0</color>
+    <color name="mdesing_light_turcoise">#00D2D2</color> <!--Secondary-->
+    <color name="mdesing_plate">#C3D9DC</color> <!--Color de plata-->
+
 </resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/alto1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margen"
+    android:layout_marginBottom="@dimen/margen"
+    android:id="@+id/tarjetaCH"
+    android:layout_marginTop="@dimen/margen"
+    android:layout_marginLeft="@dimen/margen"
+    android:layout_marginRight="@dimen/margen">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgChampion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alto1"
+            android:background="@drawable/chelsea_2021"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:paddingLeft="@dimen/margenizq"
+            android:paddingBottom="@dimen/margenizq"
+            android:background="@color/transparence">
+
+            <TextView
+                android:id="@+id/tvJornada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Champions 2021"
+                android:textColor="@color/mdesing_plate"
+                android:textSize="@dimen/tamtexto1"
+                android:textStyle="bold">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvCiudad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oporto"
+                    android:layout_marginRight="@dimen/margen"
+                    android:textColor="@color/mdesing_plate"
+                    android:textSize="@dimen/tamtexto2">
+                </TextView>
+                <TextView
+                    android:id="@+id/tvEquipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chelsea FC"
+                    android:textColor="@color/mdesing_plate"
+                    android:textSize="@dimen/tamtexto2">
+                </TextView>
+
+            </LinearLayout>
+
+                
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

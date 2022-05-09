@@ -14,6 +14,6 @@ class fragment_home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment_home, container, false)
+        return inflater.inflate(R.layout.fragment_fragmento_home, container, false)
     }
 }

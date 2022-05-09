@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.lab5_pg"
-        minSdk 21
+        minSdk 25
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -30,7 +30,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
+
 
 dependencies {
 
@@ -39,15 +43,13 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.wear.tiles:tiles-material:+'
+    implementation 'androidx.cardview:cardview:1.0.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Material Components
-    implementation 'com.google.android.material:material:1.5.0'
-    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
-
-    //Material Component
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
 
@@ -57,4 +59,13 @@ dependencies {
     implementation("androidx.navigation:navigation-dynamic-features-fragment:2.4.2")
     androidTestImplementation("androidx.navigation:navigation-testing:2.4.2")
     implementation("androidx.navigation:navigation-compose:2.4.2")
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Maps
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+
+    
 }

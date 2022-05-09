@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".views.fragment_champions"
-    android:background="#009">
+    android:background="@color/mdesign_blue_900">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="#999"
-        android:background="#009"
-        android:text="Champions" />
+        android:id="@+id/reciclerViewChampion"
+        android:layout_marginBottom="@dimen/margentop1">
 
-</FrameLayout>
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

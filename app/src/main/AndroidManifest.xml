@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lab5_pg">
 
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab5pg">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/apikey">
+        </meta-data>
         <activity
-            android:name=".views.menu_activity"
-            android:exported="true">
+            android:name=".views.activity_splashScreen"
+            android:exported="true"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,10 +26,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".views.activiy_iniciarSesion"
+            android:exported="false"
+            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".views.activity_crearCuenta"
+            android:exported="false"
+            android:theme="@style/NoActionBar"
+            android:parentActivityName=".views.activiy_iniciarSesion">
+            <meta-data
+               android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.activiy_iniciarSesion" />
+        </activity>
+
+        <activity
+            android:name=".views.menu_activity"
+            android:exported="false"
+            android:theme="@style/NoActionBar">
 
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
+
+
 
 </manifest>

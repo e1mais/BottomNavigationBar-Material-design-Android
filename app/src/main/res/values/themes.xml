@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar" >
+        <!-- Primary brand -->
+        <item name="colorPrimary">@color/mdesign_blue_900</item>
+        <item name="colorPrimaryVariant">@color/mdesing_blue_800</item>
+        <item name="colorOnPrimary">@color/mdesing_plate</item>
+
+        <!-- Secondary brand -->
+        <item name="colorSecondary">@color/mdesing_light_turcoise</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
 </resources>
